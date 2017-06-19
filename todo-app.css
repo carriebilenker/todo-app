@@ -1,6 +1,6 @@
 /*root font */
 html {font-size: 20px;
-      font-family: "Aria", Gadget, sans-serif
+      font-family: "Helvetica", Gadget, sans-serif
 }
 
 .boxes {
@@ -9,12 +9,24 @@ html {font-size: 20px;
   flex-wrap: wrap;
   align-content: center;
   margin: 1rem;
+
 }
 
 .boxes h1 {
   align-self: center;
+  color:  #26bd37;
 }
 
 .boxes fieldset {
-  width: 98%
+  align-self: center;
+  width: 98%;
+  color: #26bd37;
+  background-color:  #ffffff;
+  border-color: #26bd37;
+  border-width: medium;
+  margin: 1rem;
+}
+
+.boxes input {
+  margin 1rem;
 }
