@@ -13,14 +13,14 @@
 
 <div class="boxes">
   <fieldset id= "taskForm">
-    <form id = "taskAssignment">
+    <form class = "taskAssignment">
       <h2> Assign To: </h2>
         <input type="radio" name="worker" value="Yakko"> Yakko<br>
         <input type="radio" name="worker" value="Wakko"> Wakko<br>
         <input type="radio" name="worker" value="Dot"> Dot <br>
     </form>
 
-    <form id = "taskInformation">
+    <form class = "taskInformation">
       <h2> Task Information </h2>
         <h3> Details and Instructions </h3>
           <textarea name ="details" rows="5" cols="50"> No puns, riddles, or scavenger hunts, please!
@@ -28,7 +28,7 @@
       </form>
 
       <h3> Skill level </h3>
-      <form id="taskDifficulty">
+      <form class="taskDifficulty">
       <select>
         <option value="Basic">Basic</option>
         <option value="Easy Breezy">Easy Breezy</option>
@@ -39,7 +39,7 @@
       </select>
     </form>
 
-  <button class="submit" id="addTask()"> Assign Task </button>
+  <button class="submit" onclick="addTask()"> Assign Task </button>
   </fieldset>
 </div>
 
