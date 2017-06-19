@@ -7,9 +7,7 @@ html {font-size: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
   margin: 1rem;
-
 }
 
 .boxes h1 {
@@ -18,15 +16,46 @@ html {font-size: 20px;
 }
 
 .boxes fieldset {
+  align-content: center;
   align-self: center;
+  align-items: center;
   width: 98%;
   color: #26bd37;
   background-color:  #ffffff;
   border-color: #26bd37;
   border-width: medium;
-  margin: 1rem;
 }
 
-.boxes input {
-  margin 1rem;
+.submit{
+  width: 100%;
+  margin-top: 1rem;
+  border-width: medium;
+  border-color: green;
+  background-color: green;
+  color: white;
 }
+
+.taskBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
+  color: #26bd37;
+  background-color:  #ffffff;
+  border-color: #26bd37;
+}
+
+.taskBox h1 {
+  align-self: center;
+  color:  #26bd37;
+}
+  .taskBox fieldset {
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    width: 98%;
+    color: #26bd37;
+    background-color:  #ffffff;
+    border-color: #26bd37;
+    border-width: medium;
+  }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>To Do App</title>
     <link rel="stylesheet" type="text/css" href="/todo-app.css">
+    <script type="text/javascript" src="/todo.js"></script>
   </head>
   <body>
 <div class="boxes">
@@ -11,35 +12,40 @@
 </div>
 
 <div class="boxes">
-  <fieldset>
-    <form>
-      <h2> Assign To </h2>
+  <fieldset id= "taskForm">
+    <form id = "taskAssignment">
+      <h2> Assign To: </h2>
         <input type="radio" name="worker" value="Yakko"> Yakko<br>
         <input type="radio" name="worker" value="Wakko"> Wakko<br>
         <input type="radio" name="worker" value="Dot"> Dot <br>
     </form>
 
-    <form>
+    <form id = "taskInformation">
       <h2> Task Information </h2>
         <h3> Details and Instructions </h3>
-          <textarea rows="5" cols="50"> No puns, riddles, or scavenger hunts, please!
+          <textarea name ="details" rows="5" cols="50"> No puns, riddles, or scavenger hunts, please!
         </textarea>
+      </form>
+
       <h3> Skill level </h3>
-    <select name="difficulty">
+      <form id="taskDifficulty">
+      <select>
         <option value="Basic">Basic</option>
         <option value="Easy Breezy">Easy Breezy</option>
         <option value="Long Island Medium">Long Island Medium</option>
         <option value="Ruff">Ruff</option>
         <option value="This is Sparta!">This is Sparta!</option>
       </select>
-
-<div class="boxes">
-<input type="submit">
-</div>
-
     </form>
+
+  <input class="submit" type="submit" onclick="addTask()">
   </fieldset>
 </div>
 
+<div class = "taskBox">
+  <h1> Tasks Assigned </h1>
+    <fieldset>
+    </fieldset>
+</div>
   </body>
 </html>
