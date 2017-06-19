@@ -1,16 +1,20 @@
 /*root font */
-html {font-size: 16px;
+html {font-size: 20px;
       font-family: "Aria", Gadget, sans-serif
 }
 
 .boxes {
   display: flex;
-  flex: 0 0 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-content: center;
+  margin: 1rem;
+}
+
+.boxes h1 {
+  align-self: center;
 }
 
 .boxes fieldset {
-  width: 100%
+  width: 98%
 }
