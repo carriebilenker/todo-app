@@ -1,8 +1,11 @@
 function addTask(){
 event.preventDefault();
-console.log ("crap, this is difficult!")
-}
+console.log ("Assigning a new task");
 
+var tasksAssigned =
+ document.getElementsByName('class');
+console.log (tasksAssigned);
+// };
 
 var worker = [];
 var details = [];
